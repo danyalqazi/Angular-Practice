@@ -1,0 +1,14 @@
+p {
+    font-size: 30px;
+    color: darkcyan;
+}
+
+label {
+    font-size: 20px;
+    color: slategray;
+}
+
+select {
+    width: 40%;
+    text-align: center;
+}

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ANGULARMATERIAL"
+    }
+  },
+  "defaultProject": "ANGULARMATERIAL",
+  "cli": {
+    "analytics": false
+  }
 }

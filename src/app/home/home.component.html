@@ -1,0 +1,134 @@
+<!-- <div class="container">
+    <table>
+        <tr>
+            <th>First Name </th>
+            <th>Last Name </th>
+            <th>Age</th>
+            <th>Organization</th>
+
+        </tr>
+
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>technotech</td>
+
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>40</td>
+            <td>techno</td>
+        </tr>
+    </table>
+</div> -->
+
+
+
+<div>
+    <h3 class="text-center text-uppercase">List of Employees</h3>
+
+    <table class="table table-bordered table-striped w-auto">
+        <thead>
+            <tr class="text-center text-uppercase ">
+                <!-- <th>ID</th> -->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Education</th>
+                <th>Institute</th>
+                <th>Languages</th>
+                <th>Pass out year</th>
+                <th>Area of Interest</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of career">
+                <!-- <td>{{emp._id}}</td> -->
+                <td>{{emp.firstName}}</td>
+                <td>{{emp.lastName}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.mail}}</td>
+                <td>{{emp.contactNumber}}</td>
+                <td>{{emp.education}}</td>
+                <td>{{emp.institute}}</td>
+                <td>{{emp.languages}}</td>
+                <td>{{emp.passOutyear}}</td>
+                <td>{{emp.areaOfinterest}}</td>
+
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+    <a href="#showModal" class="btn btn-success " data-toggle="modal">Show</a>
+    <div class="modal fade show" id="showModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header bg-success text-white">
+                        <h3>Show</h3>
+                        <span class="close" data-dismiss="modal">
+                <i class="fa fa-window-close"></i>
+            </span>
+                    </div>
+                    <div class="modal-body">
+
+                        <h3 class="text-center text-uppercase">List of Employees</h3>
+
+                        <table class="table table-bordered table-striped w-auto">
+                            <thead>
+                                <tr class="text-center text-uppercase ">
+                                    <!-- <th>ID</th> -->
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    <th>Education</th>
+                                    <th>Institute</th>
+                                    <th>Languages</th>
+                                    <th>Pass out year</th>
+                                    <th>Area of Interest</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let emp of career">
+                                    <!-- <td>{{emp._id}}</td> -->
+                                    <td>{{emp.firstName}}</td>
+                                    <td>{{emp.lastName}}</td>
+                                    <td>{{emp.gender}}</td>
+                                    <td>{{emp.mail}}</td>
+                                    <td>{{emp.contactNumber}}</td>
+                                    <td>{{emp.education}}</td>
+                                    <td>{{emp.institute}}</td>
+                                    <td>{{emp.languages}}</td>
+                                    <td>{{emp.passOutyear}}</td>
+                                    <td>{{emp.areaOfinterest}}</td>
+
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="" class="btn btn-secondary" data-dismiss="modal">Close</a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,222 @@
+<!--
+                                   Career form
+ -->
+
+<div class="container">
+    <p class="text-center"><b>Personal Information</b></p>
+    <form [formGroup]="careerForm" (ngSubmit)="onSubmit()">
+
+
+        <!-- first name -->
+
+        <div class="row sec">
+            <div class="col-sm-4 offset-md-1 ">
+                <label class=""><b>Enter First Name :</b></label>
+
+                <div class="form-group ">
+
+                    <input formControlName="firstName" type="text" class="form-control">
+
+
+                </div>
+            </div>
+            <!-- last name -->
+
+            <div class="col-sm-4 offset-md-2">
+                <label><b>Enter Last Name :</b></label>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="lastName" name="">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- gender -->
+
+        <div class="row">
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Gender :</b></label>
+                <div class="form-group ">
+
+                    <select class="form-control" id="gender" placeholder="Select Gender" formControlName="gender">
+            <option  >Male</option>
+            <option  >Female</option>
+            </select>
+                </div>
+            </div>
+
+            <!-- Email -->
+
+            <div class="col-sm-4 offset-md-2">
+                <label class="ml-2"><b>Email :</b></label>
+                <div class="form-group">
+                    <input type="email" formControlName="mail" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- contact -->
+
+        <div class="row">
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Contact :</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="contactNumber" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- educational info -->
+
+        <p class="text-center"><b>Educational Information</b> </p>
+        <div class="row">
+
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Institute :</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="institute" class="form-control">
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-4 offset-md-2">
+                <label class="ml-2"><b>GPA :</b></label>
+                <div class="form-group">
+                    <input type="number" formControlName="gpa" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Education :</b></label>
+                <div class="form-group">
+
+
+                    <input type="radio" formControlName="education" name="education" value="matric"> Matric
+                    <input type="radio" formControlName="education" name="education" value="intermediate"> Intermediate
+                    <input type="radio" formControlName="education" name="education" value="bachelors"> Bachelors
+                    <input type="radio" formControlName="education" name="education" value="masters"> Masters
+
+
+                </div>
+            </div>
+
+            <div class="col-sm-4 offset-md-2">
+                <label class="ml-2"><b>Additional Certificates :</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="additional" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Passing Out Year:</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="passOut" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- area of interest -->
+
+        <div class="text-center">
+            <label style="color: darkcyan;"><b>Area of interest:</b></label>
+            <br>
+
+            <select formControlName="areaOfinterest" placeholder="Select " name="area" id="area">
+                      <option value="achitect">Architect</option>
+                      <option value="civil">Civil Engineer</option>
+                      <option value="creative">Creative Designer</option>
+                      <option value="customer">Customer Services</option>
+                      <option value="digital">Digital Maketing</option>
+                      <option value="finance">Finance</option>
+                      <option value="human">Human Resource</option>
+                      <option value="ionic">Ionic 4 Developer</option>
+                      <option value="management">Management</option>
+                      <option value="marketing">Marketing Executive</option>
+                      <option value="mean">Mean Stack Developer</option>
+                      <option value="real">Real Estate Executive</option>
+                      <option value="r&d">R & D</option>
+                      <option value="seo">SEO</option>
+                      <option value="video">Video Making & Editing</option>
+                      <option value="ui">Ui/Ux Designer</option>
+                      <option value="others">Others</option>
+
+                      
+
+                    </select>
+            <br><br>
+
+        </div>
+
+
+        <!-- other interest -->
+
+        <div class="row">
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Other Interest :</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="othersInterest" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Language -->
+
+        <div class="row">
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Languages :</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="languages" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <!-- goals -->
+
+        <div class="row">
+            <div class="col-sm-4 offset-md-1">
+                <label class="ml-2"><b>Short Term Goals :</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="shortTermgoals" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-sm-4 offset-md-2">
+                <label class="ml-2"><b>Long Term Goals :</b></label>
+                <div class="form-group">
+                    <input type="text" formControlName="longTermgoals" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-sm-2 offset-md-1">
+                <input type="file" name="profile" formControlName="image" (change)="onFileSelect($event)" />
+            </div>
+
+        </div>
+        <!-- footer -->
+
+        <div class="modal-footer">
+            <a href="" class="btn btn-secondary" data-dismiss="modal">Close</a>
+            <button click='( submit() )'>Submit</button>
+        </div>
+    </form>
+</div>
